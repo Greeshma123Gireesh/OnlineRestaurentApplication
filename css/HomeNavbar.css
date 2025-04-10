@@ -1,0 +1,39 @@
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.mobile-header .logo {
+  width: 100px;
+  height: auto;
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellowgreen;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bottom-navbar a {
+  text-decoration: none;
+  color: black;
+}

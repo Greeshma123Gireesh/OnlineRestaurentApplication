@@ -1,0 +1,26 @@
+.sidenav-container {
+    width: 200px;
+    background-color: azure;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .sidenav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidenav-container ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  /* Mobile-specific layout adjustments */
+  @media (max-width: 768px) {
+    .sidenav-container {
+      width: 100%; /* Full width for mobile */
+      height: auto; /* Adjust height to fit content */
+    }
+  }
+  

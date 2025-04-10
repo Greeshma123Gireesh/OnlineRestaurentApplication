@@ -1,0 +1,38 @@
+.sidenav-container {
+  width: 200px;
+  background-color: azure;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidenav-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav-container ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Mobile-specific layout */
+@media (max-width: 768px) {
+  .sidenav-container {
+    width: 100%; /* Full width for mobile */
+    height: calc(100vh - 80px); /* Adjust height to fit below the HomeNavbar */
+    position: fixed; /* Fix the position of the sidenav */
+    top: 60px; /* Start below the HomeNavbar */
+    left: 0; /* Align to the left edge */
+    z-index: 10; /* Ensure it appears above other content */
+    background-color: azure;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+
+  /* Ensure the main content starts below the HomeNavbar */
+  .content-container {
+    margin-top: 88px; /* Adjust this to match the height of the HomeNavbar */
+    padding: 20px;
+  }
+}
